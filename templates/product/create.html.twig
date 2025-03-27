@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProductController!{% endblock %}
+
+{% block body %}
+
+    <h1>Create Product</h1>
+    {{ form_start(form) }}
+        {{ form_row(form.name) }}
+        {{ form_row(form.price) }}
+
+        <button type="submit">Ajouter</button> {# Bouton ajouté ici #}
+    {{ form_end(form) }}
+
+{% endblock %}
